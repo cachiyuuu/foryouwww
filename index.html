@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#eaf2ff">
+<title>Happy 14th Birthday, Aluna ♡</title>
+<style>
+:root{--ink:#394966;--blue:#a9c8f2;--blue-deep:#7198d0;--pink:#f8dce8;--cream:#fffaf7;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;font-family:"Trebuchet MS","Segoe UI",sans-serif;color:var(--ink);background:linear-gradient(145deg,#eaf3ff 0%,#fff2f7 54%,#fff9ef 100%);overflow-x:hidden}
+button{font:inherit}
+.sparkle{position:fixed;z-index:0;pointer-events:none;color:#91acd5;opacity:.7;animation:float 5s ease-in-out infinite}
+.s1{top:10%;left:7%;font-size:25px}.s2{top:18%;right:8%;font-size:23px;animation-delay:1s}.s3{bottom:14%;left:9%;font-size:20px;animation-delay:2s}.s4{bottom:19%;right:8%;font-size:26px;animation-delay:.6s}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-13px) rotate(8deg)}}
+.page{position:relative;z-index:1;min-height:100svh;padding:25px 16px;display:none;align-items:center;justify-content:center}
+.page.active{display:flex;animation:appear .55s ease both}
+@keyframes appear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.card{width:min(100%,680px);padding:clamp(24px,5.5vw,46px);text-align:center;background:rgba(255,255,255,.82);border:1px solid rgba(255,255,255,.95);border-radius:29px;box-shadow:0 18px 55px rgba(91,122,166,.15);backdrop-filter:blur(10px)}
+.eyebrow{letter-spacing:2.8px;text-transform:uppercase;font-size:.7rem;font-weight:800;color:#7797c2}
+h1{font-size:clamp(2.2rem,8vw,4.2rem);line-height:1.06;margin:14px 0;color:#5879a8}
+h2{font-size:clamp(1.8rem,5.8vw,2.65rem);line-height:1.15;margin:13px 0 18px;color:#5879a8}
+p{font-size:clamp(1rem,2.7vw,1.1rem);line-height:1.85;margin:12px 0}
+.subtitle{max-width:470px;margin:0 auto 12px;color:#687891}
+.btn{border:0;border-radius:999px;padding:14px 23px;margin:8px 5px;cursor:pointer;color:#fff;background:linear-gradient(135deg,#7ea9e5,#9b9fe3);font-weight:800;box-shadow:0 8px 18px rgba(105,142,202,.23);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 11px 23px rgba(105,142,202,.3)}
+.btn.secondary{background:#fff;color:#6d88b2;border:1px solid #dbe8fa;box-shadow:none}
+.hint{font-size:.88rem;color:#8a98ad;margin-top:8px}
+.cake-area{margin:22px auto 12px;position:relative;width:230px;height:210px;display:flex;align-items:flex-end;justify-content:center}
+.cake{position:relative;width:190px;height:120px;margin-bottom:15px}
+.plate{position:absolute;bottom:0;left:0;width:190px;height:18px;background:#d7e6fa;border-radius:50%;box-shadow:0 7px 0 #b7cfee}
+.cake-bottom{position:absolute;bottom:12px;left:20px;width:150px;height:61px;background:#8fb7eb;border-radius:9px 9px 15px 15px;box-shadow:inset 0 -8px 0 rgba(69,111,174,.12)}
+.cake-top{position:absolute;bottom:65px;left:20px;width:150px;height:32px;background:#fff4fa;border-radius:50%;border:3px solid #f5c8db}
+.icing{position:absolute;bottom:48px;left:20px;width:150px;height:24px;background:#ffd9e9;border-radius:0 0 13px 13px}
+.drip{position:absolute;top:13px;width:17px;height:20px;background:#ffd9e9;border-radius:0 0 10px 10px}
+.d1{left:25px;height:25px}.d2{left:63px;height:17px}.d3{left:103px;height:27px}.d4{left:130px;height:18px}
+.sprinkle{position:absolute;z-index:2;width:8px;height:3px;border-radius:3px;background:#f3a7c8;transform:rotate(25deg)}
+.sp1{left:45px;top:80px}.sp2{left:82px;top:73px;background:#9fc5f8;transform:rotate(-25deg)}.sp3{left:120px;top:83px;background:#f4cf79}.sp4{left:145px;top:73px;background:#9fc5f8}
+.candle{position:absolute;bottom:91px;width:12px;height:48px;border-radius:5px 5px 2px 2px;background:repeating-linear-gradient(45deg,#fff 0 5px,#f4a8c8 5px 10px);z-index:4}
+.c1{left:63px}.c2{left:89px;height:57px;bottom:94px}.c3{left:115px}
+.flame{position:absolute;left:50%;top:-20px;transform:translateX(-50%);width:14px;height:20px;background:radial-gradient(ellipse at 50% 65%,#fff7bb 0 18%,#ffc75e 45%,#ff9a68 75%);border-radius:55% 45% 55% 45%;filter:drop-shadow(0 0 8px #ffc75e);animation:flicker .7s ease-in-out infinite alternate}
+@keyframes flicker{from{transform:translateX(-50%) rotate(-5deg) scale(.95)}to{transform:translateX(-50%) rotate(5deg) scale(1.08)}}
+.blown .flame{display:none}.smoke{display:none;position:absolute;left:50%;top:-23px;width:14px;height:23px;border-right:2px solid #aab8ca;border-radius:50%;transform:rotate(20deg)}.blown .smoke{display:block;animation:smoke .9s ease-out forwards}
+@keyframes smoke{from{opacity:.8;transform:translateY(0) rotate(20deg)}to{opacity:0;transform:translateY(-22px) rotate(50deg)}}
+.letter{padding:22px clamp(17px,4vw,27px);background:linear-gradient(145deg,#fffafc,#f5f9ff);border:1px dashed #c4d7f1;border-radius:21px;text-align:left;margin:20px 0}
+.letter p{margin:0 0 14px}.letter p:last-child{margin-bottom:0}
+.heart{font-size:2.1rem;display:inline-block;animation:heartbeat 1.3s infinite}
+@keyframes heartbeat{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+.signature{font-weight:800;color:#7798c7;margin-top:18px}
+.footer{font-size:.78rem;color:#9ba7b8;margin-top:22px}
+#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:5}
+[hidden]{display:none!important}
+@media(max-width:430px){.cake-area{transform:scale(.9);margin-top:9px;margin-bottom:0}.card{border-radius:24px}.btn{width:100%;margin:7px 0}.letter{padding:19px 17px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="sparkle s1">✦</div><div class="sparkle s2">♡</div><div class="sparkle s3">✧</div><div class="sparkle s4">✦</div>
+<canvas id="confetti"></canvas>
+
+<section class="page active" id="page1">
+ <main class="card">
+  <div class="eyebrow">a little surprise for you ♡</div>
+  <h1>Happy 14th<br>Birthday, Aluna!</h1>
+  <p class="subtitle">Hari ini ada satu orang spesial yang harus dirayakan. Dan orang itu… kamu! 🎀</p>
+  <div class="cake-area" id="cakeArea" aria-label="Kue ulang tahun dengan tiga lilin">
+   <div class="cake"><div class="plate"></div><div class="cake-bottom"></div><div class="icing"><i class="drip d1"></i><i class="drip d2"></i><i class="drip d3"></i><i class="drip d4"></i></div><div class="cake-top"></div><i class="sprinkle sp1"></i><i class="sprinkle sp2"></i><i class="sprinkle sp3"></i><i class="sprinkle sp4"></i><div class="candle c1"><i class="flame"></i><i class="smoke"></i></div><div class="candle c2"><i class="flame"></i><i class="smoke"></i></div><div class="candle c3"><i class="flame"></i><i class="smoke"></i></div></div>
+  </div>
+  <p id="cakePrompt"><b>Sebelum lanjut, jangan lupa buat permohonan dulu!</b><br>Pejamkan mata sebentar, lalu tiup lilinnya. 🕯️</p>
+  <button class="btn" id="blowBtn" onclick="blowCandles()">Aku tiup lilinnya! 💨</button>
+  <div><button class="btn secondary" id="continue1" onclick="showPage(2)" hidden>Ayo lanjut baca ♡</button></div>
+  <div class="hint" id="tinyHint">Tenang, permohonannya rahasia antara kamu dan semesta.</div>
+ </main>
+</section>
+
+<section class="page" id="page2">
+ <main class="card">
+  <div class="eyebrow">a little message for you ♡</div><div class="heart">💌</div>
+  <h2>Happy 14th Birthday, Aluna!</h2>
+  <div class="letter">
+   <p>Hai, Luna!</p>
+   <p>Selamat ulang tahun yang ke-14, ya. Nggak kerasa sekarang kamu udah 14 tahun aja.</p>
+   <p>Semoga di umur yang baru ini, banyak hal baik datang ke hidup kamu. Semoga kamu selalu sehat, bahagia, dan bisa mendapatkan hal-hal yang kamu inginkan.</p>
+   <p>Aku juga berharap kamu bisa terus berkembang jadi diri kamu sendiri, berani mencoba hal baru, dan nggak gampang menyerah kalau ada sesuatu yang nggak berjalan sesuai keinginanmu.</p>
+   <p>Kalau nanti ada hari yang nggak berjalan baik, nggak apa-apa. Kamu nggak harus selalu punya semuanya dalam kendali. Pelan-pelan aja, nikmati prosesnya, dan jangan terlalu keras sama diri sendiri.</p>
+   <p>Pokoknya, semoga tahun ini jadi tahun yang baik buat kamu, ya, Luna. Semoga kamu punya banyak cerita menyenangkan yang bisa dikenang nantinya.</p>
+   <p>Once again, happy birthday! 🤍</p>
+  </div>
+  <button class="btn" onclick="showPage(3)">Ada yang mau aku sampaikan lagi →</button>
+  <div class="footer">dibuat khusus untuk Aluna, dengan sayang ♡</div>
+ </main>
+</section>
+
+<section class="page" id="page3">
+ <main class="card">
+  <div class="eyebrow">one thing i want to tell you ♡</div><div class="heart">🩵</div>
+  <h2>Maaf, ya, Luna.</h2>
+  <div class="letter">
+   <p>Sebenarnya, aku pengin kasih kamu sesuatu di hari ulang tahunmu. Tapi, karena akhir-akhir ini aku lagi sibuk sama urusan kuliah, aku belum sempat menyiapkan kado buat kamu hari ini.</p>
+   <p>Maaf, ya, aku belum bisa kasih apa-apa secara langsung di hari spesial kamu.</p>
+   <p>Aku tahu ucapan ulang tahun aja mungkin nggak sama dengan menerima hadiah yang bisa kamu buka atau simpan. Tapi, aku tetap pengin melakukan sesuatu buat kamu, meskipun kali ini bentuknya cuma lewat web kecil ini.</p>
+   <p>Aku bikin ini supaya kamu tetap punya sesuatu untuk dibaca di hari ulang tahunmu. Setidaknya, aku bisa menyampaikan beberapa hal yang mungkin nggak selalu aku ucapkan secara langsung.</p>
+   <p>Untuk kadonya, semoga nanti aku bisa kasih sesuatu saat sudah ada waktu luang, ya. Jadi, hari ini bukan berarti aku lupa atau nggak menyiapkan apa-apa karena kamu nggak penting.</p>
+   <p><b>Happy birthday sekali lagi, Luna.</b> Semoga kamu tetap menikmati hari ini dan punya banyak alasan untuk bahagia.</p>
+   <p>Sekarang, lanjut ke halaman berikutnya, ya. Aku masih punya beberapa doa yang ingin aku sampaikan buat kamu. 🤍</p>
+  </div>
+  <button class="btn" onclick="showPage(4)">Baca doa-doa dariku →</button>
+ </main>
+</section>
+
+<section class="page" id="page4">
+ <main class="card">
+  <div class="eyebrow">a few wishes for your 14th ♡</div><div class="heart">🎂</div>
+  <h2>For You, Luna.</h2>
+  <div class="letter">
+   <p>Selamat datang di umur 14 tahun, ya, Luna!</p>
+   <p>Di umur yang baru ini, aku berharap kamu selalu diberikan kesehatan, kebahagiaan, dan kemudahan dalam menjalani hari-harimu.</p>
+   <p>Semoga sekolahmu berjalan lancar, nilaimu bagus, dan semua hal yang sedang kamu usahakan bisa mendapatkan hasil yang baik. Semoga kamu juga bertemu banyak orang baik yang bisa menjadi teman, mendukungmu, dan membuat masa sekolahmu jadi lebih menyenangkan.</p>
+   <p>Aku berharap kamu bisa semakin mengenal dirimu sendiri, menemukan hal-hal yang kamu sukai, dan berani mencoba sesuatu yang baru. Nggak apa-apa kalau sesekali kamu melakukan kesalahan atau belum berhasil mendapatkan sesuatu yang kamu inginkan. Kamu masih punya banyak waktu untuk belajar dan berkembang.</p>
+   <p>Kalau suatu hari kamu merasa capek, sedih, atau sedang menghadapi masalah, semoga semuanya bisa segera membaik. Kamu nggak harus selalu terlihat baik-baik saja. Istirahat kalau memang lelah, dan jangan merasa tertinggal hanya karena perjalananmu berbeda dari orang lain.</p>
+   <p>Yang paling penting, semoga kamu selalu punya alasan untuk bahagia, orang-orang yang tulus menyayangimu, dan keberanian untuk mengejar apa yang kamu inginkan.</p>
+   <p>Aku nggak tahu hal-hal seperti apa yang akan kamu temui di tahun ini, tetapi aku berharap lebih banyak hal baik yang datang daripada hal-hal yang membuatmu sedih.</p>
+   <p><b>Enjoy your 14th year, Luna.</b> Buat banyak kenangan menyenangkan, tertawalah sebanyak yang kamu mau, dan nikmati masa-masa ini selagi kamu menjalaninya.</p>
+   <p>Sekali lagi, selamat ulang tahun. Semoga semua doa baik yang kamu panjatkan hari ini bisa menemukan jalannya untuk menjadi kenyataan.</p>
+   <p><i>I'm always wishing the best for you.</i> 🤍</p>
+  </div>
+  <div class="signature">With love, your sister. ♡</div>
+  <p class="hint">Kadomu mungkin belum ada hari ini, tapi aku tetap berharap kamu mendapatkan banyak hal baik, bukan cuma di hari ulang tahunmu, melainkan juga di hari-hari biasa setelahnya.</p>
+  <button class="btn" onclick="restart()">Ulangi dari awal ↺</button>
+  <div class="footer">made with love • for Aluna only</div>
+ </main>
+</section>
+
+<script>
+let blown=false;
+function blowCandles(){
+ if(blown)return;blown=true;
+ document.getElementById('cakeArea').classList.add('blown');
+ document.getElementById('cakePrompt').innerHTML='<b>Yay, lilinnya sudah padam! ✨</b><br>Semoga permohonanmu satu per satu jadi nyata, ya.';
+ document.getElementById('blowBtn').hidden=true;
+ document.getElementById('continue1').hidden=false;
+ document.getElementById('tinyHint').textContent='Satu permohonan kecil, banyak harapan baik untukmu. ♡';
+ burstConfetti();
+}
+function showPage(n){
+ document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+ document.getElementById('page'+n).classList.add('active');
+ window.scrollTo({top:0,behavior:'smooth'});
+ if(n===4)burstConfetti();
+}
+function restart(){
+ blown=false;document.getElementById('cakeArea').classList.remove('blown');
+ document.getElementById('cakePrompt').innerHTML='<b>Sebelum lanjut, jangan lupa buat permohonan dulu!</b><br>Pejamkan mata sebentar, lalu tiup lilinnya. 🕯️';
+ document.getElementById('blowBtn').hidden=false;document.getElementById('continue1').hidden=true;
+ document.getElementById('tinyHint').textContent='Tenang, permohonannya rahasia antara kamu dan semesta.';
+ showPage(1);
+}
+const canvas=document.getElementById('confetti'),ctx=canvas.getContext('2d');let pieces=[],animating=false;
+function resize(){canvas.width=innerWidth*devicePixelRatio;canvas.height=innerHeight*devicePixelRatio;ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0)}
+addEventListener('resize',resize);resize();
+function burstConfetti(){
+ const colors=['#a7c9f5','#f6b9d2','#f6d68b','#b8dfd0','#c6b8ed'];
+ for(let i=0;i<100;i++)pieces.push({x:innerWidth/2+(Math.random()-.5)*180,y:innerHeight*.42,vx:(Math.random()-.5)*8,vy:-Math.random()*8-2,size:Math.random()*7+3,rot:Math.random()*6,color:colors[Math.floor(Math.random()*colors.length)],life:100+Math.random()*45});
+ if(!animating){animating=true;requestAnimationFrame(drawConfetti)}
+}
+function drawConfetti(){
+ ctx.clearRect(0,0,innerWidth,innerHeight);pieces=pieces.filter(p=>p.life>0&&p.y<innerHeight+30);
+ for(const p of pieces){p.x+=p.vx;p.y+=p.vy;p.vy+=.13;p.rot+=.08;p.life--;ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.rot);ctx.globalAlpha=Math.min(1,p.life/25);ctx.fillStyle=p.color;ctx.fillRect(-p.size/2,-p.size/2,p.size,p.size*.65);ctx.restore()}
+ if(pieces.length)requestAnimationFrame(drawConfetti);else{animating=false;ctx.clearRect(0,0,innerWidth,innerHeight)}
+}
+</script>
+</body>
+</html>
